@@ -1,6 +1,8 @@
 # Belajar-tailwind-Css-wpu
+
 [Documentasi Tailwind Css](https://tailwindcss.com/docs/installation)
 
+## **_Instalasi dan Configurasi Tailwind Css_**
 - Pertama yang harus kita lakukan npm init terlebih dahulu.
 `npm init`
 - Install Tailwind Css, postcss, autoprefixer.

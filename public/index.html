@@ -1,14 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/public/css/style.css" rel="stylesheet">
-    <title>Belajar TailwindCss</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="/public/css/style.css" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extends: {
+          spacing: {
+            '13': '3.25rem',
+          },
+        },
+      }
+    }
+  </script>
+  <title>Belajar TailwindCss</title>
 </head>
+
 <body>
-    <h3 class="text-5xl bg-gray-400">Hallo word</h3>
-    <a href="" class="bg-red-300 rounded shadow p-2 inline-block m-3 hover:bg-red-500 text-white">Ini tombol</a>
+  <h2 class="text-7xl font-bold font-sans p-5 text-center">Belajar <span
+      class="bg-gradient-to-r from-teal-400 to-amber-500 bg-clip-text text-transparent">TailwindCss</span></h2>
+  <!-- space -->
+  <section class="my-2 bg-indigo-300">
+    <h3 class="text-center text-2xl font-bold">Space</h3>
+    <div class="border-2 border-yellow-300 m-13 p-2 bg-midnight">Margin - pading</div>
+  </section>
+
+  <section class="mt-4 py-4 border-2 bg-gradient-to-l from-amber-600 via-purple-300 to-red-300 border-red-500">
+    <div class="w-32 h-32 p-4 text-center my-auto mx-auto">Sizing</div>
+  </section>
+
+  <section class="py-4 border-2 border-indigo-400 mt-96 max-w-2xl px-3 font-inter text-justify">
+    <h1 class="mb-4 text-red-700 font-semibold">Typography</h1>
+    <hr>
+    <h2 class="p-3 mb-5 font-medium text-2xl underline">Belajar Tailwind dengan Pak dika</h2>
+    <div class=" mb-5"> Susila Tropika - 2022-Mei-16</div>
+    <p class="mb-4 leading-8 indent-5 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt consequuntur
+      velit maxime autem
+      expedita, perspiciatis fugit cumque? Architecto vitae libero magni maiores ab, dicta impedit doloremque veritatis
+      et beatae delectus nesciunt rem ratione facilis, voluptates commodi similique quas suscipit doloribus? Voluptatem
+      nostrum deleniti et tempora qui quas. Quos deleniti possimus itaque non nesciunt maxime mollitia temporibus velit
+      ducimus suscipit odio a, labore maiores quo corrupti asperiores consequuntur facilis quibusdam nemo debitis facere
+      tenetur? Voluptate exercitationem recusandae a aspernatur veritatis nesciunt accusantium aperiam saepe modi
+      molestias et, id quia enim tenetur in vel sit voluptatum reprehenderit aliquid eum optio similique amet?</p>
+    <blockquote class="mb-4 italic  font-thin text-xl">
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae reprehenderit rem porro impedit sit natus
+      corrupti! Numquam quas quam quae?"
+    </blockquote>
+    <p class="indent-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, odit quis iusto omnis quam
+      facilis ex, quasi
+      optio impedit dolore ipsa. Magnam, impedit? Deserunt doloremque nostrum ipsam cupiditate fugit maxime
+      reprehenderit neque tempora quidem, ea, fugiat quam aliquam eaque qui quia nobis itaque exercitationem eum labore
+      dolor. Quidem, minus vero?</p>
+  </section>
+  <div class="max-w-5xl mx-auto mt-29 h-96 m-[24px] bg-yellow-500 p-5 overflow-y-scroll"
+    style="background-image: url('https://source.unsplash.com/1000x600?computer');">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ea magni non possimus vero officia similique,
+      laboriosam ipsa temporibus doloremque culpa voluptate voluptas fuga labore tenetur id? Quas doloribus recusandae
+      sapiente maxime quae mollitia totam vero optio corporis harum facilis tenetur fugiat vitae sint repellendus dolore
+      consequuntur exercitationem, rem soluta minima voluptatem. Sunt eum quos officiis in sit saepe, doloremque iste
+      accusantium error! Voluptas eius harum ad asperiores facere sed optio molestias nihil perspiciatis, aspernatur
+      dolores natus delectus labore expedita consectetur alias? Neque voluptas delectus reiciendis nisi temporibus
+      inventore ex, exercitationem ab nihil consectetur suscipit reprehenderit rem dolorum illum quis. Lorem ipsum dolor
+      sit amet, consectetur adipisicing elit. Obcaecati ratione placeat in iste fugit expedita eius deleniti sunt! Optio
+      architecto ipsum commodi adipisci veritatis iure voluptatem cum excepturi nobis, tempora voluptatibus aperiam
+      fugit voluptas numquam dicta cupiditate provident amet suscipit debitis perspiciatis dolore, explicabo labore ex
+      dolores. Facilis, aut adipisci. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum alias quibusdam
+      repudiandae cum at beatae officia vitae voluptatum. Sit enim ex, minima doloremque aliquam eveniet amet. Non
+      perferendis consectetur ipsam.</p>
+  </div>
+  <div class="mt-32 max-w-xl mx-auto h-96 bg-center bg-yellow-200  bg-cover rounded-3xl border-4 bg-no-repeat shadow-lg shadow-slate-500"
+    style="background-image: url('../img//bg-image.jpg');">
+    <div class="w-full flex h-full bg-blue-900/50">
+      <div class="w-56 m-auto bg-black/30 rounded-2xl">
+        <form action="" class="p-3 m-3 text-white font-bold" >
+          <label for="">Email</label>
+          <input class=" bg-zinc-400 border-2 text-black focus:outline-none focus:ring-1 focus:ring-sky-500 peer focus:border-2  invalid:text-pink-700" type="email">
+          <p class="invisible text-red-800 peer-invalid:visible">Email Tidak Valid</p>
+          <label for="">Password</label>
+          <input class="bg-zinc-400 border-2 focus:outline-none focus:ring-1 focus:ring-sky-500 focus:border-2  " type="password">
+          <input class="bg-green-600 hover:bg-green-700 active:bg-green-900 border-white-800 mt-5 p-[5px] rounded-md ml-28 w-16 focus:ring focus:ring-green-300" type="button" value="Save">
+        </form>
+      </div>
+    </div>
+  </div>
+  <div
+    class="mt-8 divide-green-900 grid max-w-md mx-auto border-2 border-green-900 h-10 grid-cols-3 divide-x mb-52 text-center">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+  </div>
+
+  <div class="max-w-md mx-auto border hover:bg-purple-700 group border-slate-500 shadow-md shadow-slate-400 rounded-xl p-5 font-inter">
+    <h3 class="font-bold text-[18px] group-hover:text-white">Susila Tropika</h3>
+    <h4 class="font-thin text-slate-400 text-[14px] mb-2">27 Februari 1993</h4>
+    <p class="text-justify text-slate-600 group-hover:text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum recusandae nulla nesciunt! Nisi architecto sed numquam saepe a, quod commodi distinctio officiis voluptatem quisquam sequi fuga ea, velit, veniam sit iusto? Eaque temporibus soluta earum, accusamus ea expedita doloremque eum maxime quaerat accusantium debitis dicta impedit animi nam ratione sint.</p>
+  </div>
+  <div class="mt-44 border shadow-md  hover:bg-black/50 group shadow-slate-400 max-w-md p-5 mx-auto text-justify font-sans">
+    <h3 class="my-3 text-lg font-semibold group-hover:text-white">My Card</h3>
+    <p class="group-hover:text-white selection:bg-yellow-800 selection:text-violet-400 first-letter:text-5xl first-letter:uppercase first-letter:font-serif first-letter:float-left first-letter:mr-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi accusantium porro ipsum quia libero earum unde minus voluptatibus commodi amet! Obcaecati accusamus labore dolores consectetur fuga voluptate, incidunt necessitatibus ex esse tempora, sint recusandae minus error consequuntur illo similique suscipit!</p>
+  </div>
+  <div class="mt-44"></div>
 </body>
+
 </html>
